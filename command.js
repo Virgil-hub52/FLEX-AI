@@ -3,7 +3,7 @@ var commands = [];
 function cmd(info, func) {
     var data = info;
     data.function = func;
-    if (!data.dontAddCommandList) data.dontAddCommandList = false;
+    if (!data.dontAddCommandList) data.dontAddCommandList = true;
     if (!info.desc) info.desc = '';
     if (!data.fromMe) data.fromMe = false;
     if (!info.category) data.category = 'misc';
@@ -18,3 +18,6 @@ module.exports = {
     Module:cmd,
     commands,
 };
+Commands:emojimix,
+Function:combines emoji,
+    
